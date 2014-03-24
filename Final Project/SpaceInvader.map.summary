@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Mar 18 17:57:23 2014
+Quartus II 64-Bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : SpaceInvader
+Top-level Entity Name : SpaceInvader
+Family : Cyclone II
+Total logic elements : 269
+    Total combinational functions : 269
+    Dedicated logic registers : 93
+Total registers : 93
+Total pins : 159
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

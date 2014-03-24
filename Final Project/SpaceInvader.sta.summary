@@ -1,0 +1,117 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -2.875
+TNS   : -54.543
+
+Type  : Slow Model Setup 'aliens:c1|c_clock[21]'
+Slack : -2.454
+TNS   : -42.630
+
+Type  : Slow Model Setup 'CLOCK_27'
+Slack : 1.827
+TNS   : 0.000
+
+Type  : Slow Model Setup 'p1|altpll_component|pll|clk[0]'
+Slack : 35.871
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_27'
+Slack : -2.056
+TNS   : -2.056
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'aliens:c1|c_clock[21]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'p1|altpll_component|pll|clk[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'p1|altpll_component|pll|clk[0]'
+Slack : -3.891
+TNS   : -83.721
+
+Type  : Slow Model Removal 'p1|altpll_component|pll|clk[0]'
+Slack : 3.475
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -22.380
+
+Type  : Slow Model Minimum Pulse Width 'aliens:c1|c_clock[21]'
+Slack : -0.500
+TNS   : -28.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_27'
+Slack : 17.518
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'p1|altpll_component|pll|clk[0]'
+Slack : 18.841
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -0.839
+TNS   : -14.901
+
+Type  : Fast Model Setup 'aliens:c1|c_clock[21]'
+Slack : -0.614
+TNS   : -6.729
+
+Type  : Fast Model Setup 'CLOCK_27'
+Slack : 1.275
+TNS   : 0.000
+
+Type  : Fast Model Setup 'p1|altpll_component|pll|clk[0]'
+Slack : 37.957
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_27'
+Slack : -1.394
+TNS   : -1.394
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'aliens:c1|c_clock[21]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'p1|altpll_component|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'p1|altpll_component|pll|clk[0]'
+Slack : -2.434
+TNS   : -52.687
+
+Type  : Fast Model Removal 'p1|altpll_component|pll|clk[0]'
+Slack : 2.231
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -22.380
+
+Type  : Fast Model Minimum Pulse Width 'aliens:c1|c_clock[21]'
+Slack : -0.500
+TNS   : -28.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_27'
+Slack : 17.518
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'p1|altpll_component|pll|clk[0]'
+Slack : 18.841
+TNS   : 0.000
+
+------------------------------------------------------------

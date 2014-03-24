@@ -1,0 +1,52 @@
+module aliens(input clock, input [9:0] x, input [9:0] y,
+	output [9:0] red, output [9:0] green, output [9:0] blue);
+	reg [2:0] idx;
+	reg [7:0] x_incre = 0;
+	reg [7:0] y_incre = 0;
+	reg direction;
+	
+	always @(posedge clock)
+		begin
+			if (~direction && (355 + x_incre) >= 600) 
+				begin
+					direction <= 1;
+					y_incre = y_incre + 20;
+				end
+			else if (direction && (10 + x_incre) <= 5)
+				begin
+					direction <= 0;
+					y_incre = y_incre + 20;
+				end
+			else if (direction) x_incre = x_incre - 30;
+			else x_incre = x + 30;
+		end
+		
+	always @(x, y)
+		begin
+			if (10 + x_incre < x & x < 40 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (45 + x_incre < x & x < 75 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (80 + x_incre < x & x < 110 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (115 + x_incre < x & x < 145 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (150 + x_incre < x & x < 180 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (185 + x_incre < x & x < 215 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (220 + x_incre < x & x < 250 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (255 + x_incre < x & x < 285 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (290 + x_incre < x & x < 320 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (325 + x_incre < x & x < 355 + x_incre & 10 < y & y < 40) idx <= 3'd7; // white
+			else if (10 + x_incre < x & x < 40 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (45 + x_incre < x & x < 75 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (80 + x_incre < x & x < 110 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (115 + x_incre < x & x < 145 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (150 + x_incre < x & x < 180 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (185 + x_incre < x & x < 215 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (220 + x_incre < x & x < 250 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (255 + x_incre < x & x < 285 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (290 + x_incre < x & x < 320 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else if (325 + x_incre < x & x < 355 + x_incre & 45 < y & y < 75) idx <= 3'd7; // white
+			else idx <= 3'd4; // black
+		end
+		
+	assign red = (idx[0]? 10'h3ff: 10'h000);
+	assign green = (idx[1]? 10'h3ff: 10'h000);
+	assign blue = (idx[2]? 10'h3ff: 10'h000);
+endmodule
